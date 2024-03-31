@@ -20,8 +20,7 @@ Wir freuen uns auf Dich!
 24.06. 18:30 Ort: TBD
 
 
-<!-- CONTACT -->
-## Contact
+## Kontakt
 
 [Gruppe auf LinkedIn][linkedin-url]
 
