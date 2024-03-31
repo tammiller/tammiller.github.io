@@ -22,7 +22,7 @@ Wir freuen uns auf Dich!
 <!-- CONTACT -->
 ## Contact
 
-[Gruppe auf LinkedIn]([linkedin-url])
+[Gruppe auf LinkedIn][linkedin-url]
 
 
 

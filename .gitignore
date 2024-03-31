@@ -1,0 +1,15 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle
+.gradle/
+
+# Compiled class file
+out/
+
+# Dependency directories
+bin/
+build/
