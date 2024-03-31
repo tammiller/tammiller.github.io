@@ -5,7 +5,8 @@
 
 <img src="images/header.png" alt="drawing" width="50%"/>
 
-Du bist Softwareentwicklerin? Du hast Spaß an technischen Themen und schätzt den Austausch über deine Arbeit? Deine Kollegen sind super, aber manchmal fehlt dir die weibliche Note? Dann bist du bei uns genau richtig! :)
+Du bist eine Softwareentwicklerin in Aachen? Du hast Spaß an technischen Themen und schätzt den Austausch über deine Arbeit?
+Deine Kollegen sind super, aber manchmal fehlt dir die weibliche Note? Dann bist du bei uns genau richtig! :)
 
 Wir möchten uns regelmäßig treffen um uns über unsere Erfahrungen und aktuelle Themen auszutauschen. Dabei ist unser Ziel eine gesunde Mischung aus technischen Details und Softskills - ganz ohne Recruiter!
 
