@@ -1,5 +1,3 @@
-<a name="readme-top"></a>
-
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- ABOUT THE PROJECT -->
@@ -25,8 +23,6 @@ Wir freuen uns auf Dich!
 ## Contact
 
 [Gruppe auf LinkedIn]([linkedin-url])
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
