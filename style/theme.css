@@ -1072,3 +1072,32 @@ a:hover {
   margin-left: -1.25rem;
   margin-right: -1.25rem;
 }
+
+#eventsContainer {
+  margin-top: 3em;
+}
+
+/* Center the button horizontally */
+.event-button {
+  background-color: #c7f1dd !important;
+  color: #333 !important;
+  border: 2px solid #c7f1dd !important; /* Same color as background */
+  font-weight: bold;
+  display: block;
+  width: 100%; /* Makes the button take full width */
+  text-align: center; /* Ensures text is centered inside the button */
+  padding: 10px 0; /* Adds some padding for height */
+}
+
+/* Hover effect */
+.event-button:hover {
+  background-color: #a1d7b1 !important;
+  color: #000;
+  border-color: #a1d7b1; /* Change border color on hover */
+}
+
+/* Style for the keywords */
+.event-keywords {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
