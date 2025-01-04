@@ -6,7 +6,6 @@
         "startDate": "2025-01-27T18:30",
         "endDate": "2025-01-27T21:00",
         "keywords": "Vortrag, Advent of Code, AWS, Cloud",
-        "url": "https://www.linkedin.com/company/ladybugs-aachen/",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
             "@type": "Place",
@@ -30,10 +29,9 @@
         "@type": "Event",
         "name": "Februarmeeting",
         "description": "OAuth + Culture Add vs Culture Fit",
-        "startDate": "2025-01-24T18:30",
-        "endDate": "2025-01-24T21:00",
+        "startDate": "2025-02-24T18:30",
+        "endDate": "2025-02-24T21:00",
         "keywords": "Vortrag, OAuth, Okta, Authentication, Diversity",
-        "url": "https://www.linkedin.com/company/ladybugs-aachen/",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
             "@type": "Place",
@@ -60,7 +58,6 @@
         "startDate": "2025-03-24T18:30",
         "endDate": "2025-03-24T21:00",
         "keywords": "Pair programming, Workshop, Hands-on",
-        "url": "https://www.linkedin.com/company/ladybugs-aachen/",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
             "@type": "Place",

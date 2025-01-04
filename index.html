@@ -65,7 +65,7 @@
                             <p class="card-text">${event.description}</p>
                             <p><strong>Uhrzeit:</strong> ${new Date(event.startDate).toLocaleTimeString()} - ${new Date(event.endDate).toLocaleTimeString()}</p>
                             <p><strong>Location:</strong> ${event.location.name}</p>
-                            <a href="${event.url}" target="_blank" class="btn btn-primary event-button">Anmeldung</a>
+                            <a href="${event.url || '#'}" target="_blank" class="btn btn-primary event-button ${!event.url ? 'disabled' : ''}" ${!event.url ? 'aria-disabled="true"' : ''}>Anmeldung</a>
                             <p class="event-keywords">${event.keywords}</p>
                         </div>
                     </div>

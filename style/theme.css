@@ -1101,3 +1101,21 @@ a:hover {
   font-size: 0.875rem;
   color: #6c757d;
 }
+
+/* Disabled state styling */
+.event-button.disabled,
+.event-button[aria-disabled="true"] {
+  background-color: #e0e0e0;
+  color: #b0b0b0;
+  border-color: #e0e0e0;
+  pointer-events: none; /* Prevent clicks on the button */
+}
+
+/* Disabled button on hover */
+.event-button.disabled:hover,
+.event-button[aria-disabled="true"]:hover {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  color: #b0b0b0;
+}
+
