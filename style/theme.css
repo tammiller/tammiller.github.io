@@ -1119,3 +1119,20 @@ a:hover {
   color: #b0b0b0;
 }
 
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#accept-btn {
+  float: right;
+}
+
+.content-impressum {
+  margin-top: 60px;
+}
