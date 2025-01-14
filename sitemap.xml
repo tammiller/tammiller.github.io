@@ -26,15 +26,9 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Section: Contact -->
+    <!-- Section:  -->
     <url>
-        <loc>https://ladybugs-aachen.de/#contacts</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- LinkedIn Profile -->
-    <url>
-        <loc>https://www.linkedin.com/company/ladybugs-aachen/</loc>
-        <priority>0.5</priority>
+        <loc>https://ladybugs-aachen.de/impressum.html</loc>
+        <priority>0.8</priority>
     </url>
 </urlset>
