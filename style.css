@@ -65,8 +65,12 @@ h3 {
         flex-direction: column; /* Stack text properly */
     }
 
+    .text-container {
+      max-width: 100%;
+    }
+
     h1 {
-        font-size: calc(1.2rem + 1.5vw) !important;
+        font-size: calc(0.9rem + 1.5vw) !important;
     }
 
     h3 {
