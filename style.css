@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.main-section {
+    background: url('images/hintergrund.png') no-repeat center center/cover;
+    height: 60vh; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    position: relative;
+    padding: 1rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 90%; /* Prevents excessive width */
+    flex-wrap: wrap; /* Allow text to wrap */
+    text-align: center;
+}
+
+.content img {
+    max-width: 150px; /* Reduce size */
+    height: auto;
+}
+
+.text-container {
+    text-align: center; /* Center text */
+    max-width: 80%; /* Prevents text from stretching too wide */
+    word-wrap: normal;
+}
+
+h1 {
+    font-size: 1.5rem; /* Reduce for better mobile fit */
+    font-weight: bold !important;
+}
+
+h2 {
+    font-weight: bold !important;
+    padding-top: 4rem;
+}
+
+h3 {
+    font-size: 1rem; /* Smaller text */
+}
+
+@media (max-width: 768px) {
+    .content img {
+        display: none; /* Hide logo on mobile */
+    }
+
+    .content {
+        flex-direction: column; /* Stack text properly */
+    }
+
+    h1 {
+        font-size: calc(1.2rem + 1.5vw) !important;
+    }
+
+    h3 {
+        font-size: calc(0.6rem + 1.5vw) !important;
+      }
+
+      .main-section {
+        height: 40vh; /* Adjusted height */
+    }
+}
+
+#about {
+    h2 {
+        padding-top: 4rem;
+    }
+}
+
+#about p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* --------------------------- Events ------------------------------ */
+
+#eventsContainer {
+    margin-top: 3em;
+  }
+  
+  /* Center the button horizontally */
+  .event-button {
+    background-color: #c7f1dd !important;
+    color: #333 !important;
+    border: 2px solid #c7f1dd !important; /* Same color as background */
+    font-weight: bold;
+    display: block;
+    width: 100%; /* Makes the button take full width */
+    text-align: center; /* Ensures text is centered inside the button */
+    padding: 10px 0; /* Adds some padding for height */
+  }
+  
+  /* Hover effect */
+  .event-button:hover {
+    background-color: #a1d7b1 !important;
+    color: #000;
+    border-color: #a1d7b1; /* Change border color on hover */
+  }
+  
+  /* Style for the keywords */
+  .event-keywords {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  /* Disabled state styling */
+  .event-button.disabled,
+  .event-button[aria-disabled="true"] {
+    background-color: #e0e0e0;
+    color: #b0b0b0;
+    border-color: #e0e0e0;
+    pointer-events: none; /* Prevent clicks on the button */
+  }
+  
+  /* Disabled button on hover */
+  .event-button.disabled:hover,
+  .event-button[aria-disabled="true"]:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #b0b0b0;
+  }
+  
+  /* --------------------------- Cookies ------------------------------ */
+
+  #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  #accept-btn {
+    float: right;
+  }
+
+  /* --------------------------- Impressum ------------------------------ */
+  
+  .content-impressum {
+    margin-top: 60px;
+  }
