@@ -34,6 +34,7 @@
         "endDate": "2025-02-24T21:00",
         "keywords": "Vortrag, OAuth, Okta, Authentication, Diversity",
         "eventStatus": "https://schema.org/EventScheduled",
+        "url": "https://www.linkedin.com/events/februareventladybugs7292247868189364224/about/",
         "location": {
             "@type": "Place",
             "name": "Generali Deutschland AG",

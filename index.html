@@ -10,7 +10,7 @@
   <meta name="description"
     content="Community for women in software development in Aachen. We offer workshops, talks and hack evenings">
 
-  <title>Softwareentwicklerinnentreff Ladybug Aachen. Community for women in software development in Aachen, Germany
+  <title>Softwareentwicklerinnentreff Ladybug Aachen. A community for women in software engineering in Aachen, Germany
   </title>
 
   <!-- Custom styles for this template -->
@@ -38,7 +38,7 @@
                                 <span class="badge badge-primary">${new Date(event.startDate).toLocaleDateString()}</span>
                             </div>
                             <p class="card-text">${event.description}</p>
-                            <p><strong>Uhrzeit:</strong> ${new Date(event.startDate).toLocaleTimeString()} - ${new Date(event.endDate).toLocaleTimeString()}</p>
+                            <p><strong>Uhrzeit:</strong> ${new Date(event.startDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} - ${new Date(event.endDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
                             <p><strong>Location:</strong> ${event.location.name}</p>
                             <a href="${event.url || '#'}" target="_blank" class="btn btn-primary event-button ${!event.url ? 'disabled' : ''}" ${!event.url ? 'aria-disabled="true"' : ''}>Anmeldung</a>
                             <p class="event-keywords">${event.keywords}</p>
@@ -82,7 +82,7 @@
       <img src="images/ladybug.jpeg" alt="Ladybug Logo">
       <div class="text-container">
         <h1>Softwareentwicklerinnentreff Ladybug</h1>
-        <h3>Community for women in software development in Aachen</h3>
+        <h3>A community for women in software engineering in Aachen</h3>
       </div>
     </div>
   </section>
@@ -95,17 +95,17 @@
         <div class="row justify-content-center justify-content-lg-start">
           <div class="col-sm-10 col-md-8 col-lg-11">
             <h2>Über uns</h2>
-            <p class="fs-8 mb-4 mb-lg-5 lh-lg text-center text-lg-start fw-normal">
+            <p class="fs-8 mb-4 mb-lg-5 lh-lg text-lg-start fw-normal">
               Du bist eine Softwareentwicklerin in Aachen? Du hast Spaß an technischen Themen und schätzt den Austausch
               über deine Arbeit?
               Deine Kollegen sind super, aber manchmal fehlt dir die weibliche Note? Dann bist du bei uns genau richtig!
               :)
             </p>
-            <p class="fs-8 mb-4 mb-lg-5 lh-lg text-center text-lg-start fw-normal">
+            <p class="fs-8 mb-4 mb-lg-5 lh-lg text-lg-start fw-normal">
               Wir möchten uns regelmäßig treffen um uns über unsere Erfahrungen und aktuelle Themen auszutauschen. Dabei
               ist unser Ziel eine gesunde Mischung aus technischen Details und Softskills - ganz ohne Recruiter!
             </p>
-            <p class="fs-8 mb-4 mb-lg-5 lh-lg text-center text-lg-start fw-normal">Wir freuen uns auf Dich!</p>
+            <p class="fs-8 mb-4 mb-lg-5 lh-lg text-lg-start fw-normal">Wir freuen uns auf Dich!</p>
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@
 
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="text-muted">Softwareentwicklerinnentreff Ladybug Aachen. Women in software development in Aachen,
+      <span class="text-muted">Softwareentwicklerinnentreff Ladybug Aachen. A community for women in software engineering in Aachen,
         Germany</span>
     </div>
   </footer>
