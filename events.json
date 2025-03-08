@@ -61,6 +61,7 @@
         "endDate": "2025-03-24T21:00",
         "keywords": "Pair programming, Workshop, Hands-on",
         "eventStatus": "https://schema.org/EventScheduled",
+        "url": "https://www.linkedin.com/events/workshop-pairprogramming7303020331798085632/about/",
         "location": {
             "@type": "Place",
             "name": "OecherLab",
