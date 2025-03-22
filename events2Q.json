@@ -1,21 +1,21 @@
 [
     {
         "@type": "Event",
-        "name": "Januarmeeting",
-        "description": "Advent of Code + Serverless mit AWS",
-        "startDate": "2025-01-27T18:30",
-        "endDate": "2025-01-27T21:00",
-        "keywords": "Vortrag, Advent of Code, AWS, Cloud",
+        "name": "Aprilmeeting",
+        "description": "",
+        "startDate": "2025-04-28T18:30",
+        "endDate": "2025-04-28T21:00",
+        "keywords": "physische Gesundheit, mental health, Workshop",
         "eventStatus": "https://schema.org/EventScheduled",
         "url": "https://www.linkedin.com/events/januarmeetingsoftwareentwickler7281934145226719232/about/",
         "location": {
             "@type": "Place",
-            "name": "OecherLab",
+            "name": "DigiChurch",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Kapuzinergraben 19 D",
+                "streetAddress": "Jülicher Str. 72a",
                 "addressLocality": "Aachen",
-                "postalCode": "52062",
+                "postalCode": "52070",
                 "addressRegion": "Nordrhein-Westfalen",
                 "addressCountry": "Germany"
             }
@@ -28,21 +28,20 @@
     },
     {
         "@type": "Event",
-        "name": "Februarmeeting",
-        "description": "Auth0 + Culture Add vs Culture Fit",
-        "startDate": "2025-02-24T18:30",
-        "endDate": "2025-02-24T21:00",
-        "keywords": "Vortrag, Auth0, Okta, Authentication, Diversity",
+        "name": "Maimeeting",
+        "description": "DevOps Workshop",
+        "startDate": "2025-05-26T18:30",
+        "endDate": "2025-05-26T21:00",
+        "keywords": "DevOps, CI/CD, Deployments, Workshop",
         "eventStatus": "https://schema.org/EventScheduled",
-        "url": "https://www.linkedin.com/events/februareventladybugs7292247868189364224/about/",
         "location": {
             "@type": "Place",
-            "name": "Generali Deutschland AG",
+            "name": "DigiChurch",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Aachenmünchener-Platz 1",
+                "streetAddress": "Jülicher Str. 72a",
                 "addressLocality": "Aachen",
-                "postalCode": "52062",
+                "postalCode": "52070",
                 "addressRegion": "Nordrhein-Westfalen",
                 "addressCountry": "Germany"
             }
@@ -55,13 +54,12 @@
     },
     {
         "@type": "Event",
-        "name": "Märzmeeting",
+        "name": "Junimeeting",
         "description": "Pair Programming Workshop",
-        "startDate": "2025-03-31T18:30",
-        "endDate": "2025-03-31T21:00",
+        "startDate": "2025-06-30T18:30",
+        "endDate": "2025-06-30T21:00",
         "keywords": "Pair programming, Workshop, Hands-on",
         "eventStatus": "https://schema.org/EventScheduled",
-        "url": "https://www.linkedin.com/events/workshop-pairprogramming7303020331798085632/about/",
         "location": {
             "@type": "Place",
             "name": "OecherLab",
