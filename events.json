@@ -63,7 +63,15 @@
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
             "@type": "Place",
-            "name": "TBA"
+            "name": "OecherLab",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kapuzinergraben 19 D",
+                "addressLocality": "Aachen",
+                "postalCode": "52062",
+                "addressRegion": "Nordrhein-Westfalen",
+                "addressCountry": "Germany"
+            }
         },
         "organizer": {
             "@type": "Organization",
