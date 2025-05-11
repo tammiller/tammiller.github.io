@@ -32,6 +32,7 @@
         "description": "DevOps Workshop",
         "startDate": "2025-05-26T18:30",
         "endDate": "2025-05-26T21:00",
+        "url": "https://www.linkedin.com/events/workshop-devops-ci-cd7323651098341253120/",
         "keywords": "DevOps, CI/CD, Deployments, Workshop",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
