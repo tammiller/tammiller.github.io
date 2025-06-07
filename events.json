@@ -59,7 +59,8 @@
         "description": "Karrierewege",
         "startDate": "2025-06-30T18:30",
         "endDate": "2025-06-30T21:00",
-        "keywords": "",
+        "url": "https://www.linkedin.com/events/7336095140211548160/comments/",
+        "keywords": "Karriere, Vortrag, Selbstständigkeit",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
             "@type": "Place",
