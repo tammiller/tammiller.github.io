@@ -4,8 +4,9 @@
     <!-- Homepage -->
     <url>
         <loc>https://ladybugs-aachen.de/</loc>
+        <lastmod>2024-03-19</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <changefreq>monthly</changefreq>
     </url>
 
     <!-- Section: Home -->
@@ -26,9 +27,11 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Section:  -->
+    <!-- Section: Impressum -->
     <url>
-        <loc>https://ladybugs-aachen.de/impressum.html</loc>
-        <priority>0.8</priority>
+        <loc>https://ladybugs-aachen.de/impressum</loc>
+        <lastmod>2024-03-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
     </url>
 </urlset>
