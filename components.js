@@ -17,6 +17,7 @@ function createNavbar() {
                     <a class="nav-link" href="/#home">Home</a>
                     <a class="nav-link" href="/#about">Über uns</a>
                     <a class="nav-link" href="/#events">Veranstaltungen</a>
+                    <a class="nav-link" href="/past-events">Vergangene Events</a>
                     <a class="nav-link" href="/#callforaction">Call for Speakers</a>
                     <a class="nav-link" href="/impressum">Impressum</a>
                 </div>
@@ -81,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentPath === '/' && link.getAttribute('href') === '/#home') {
             link.classList.add('active');
         } else if (currentPath === '/impressum' && link.getAttribute('href') === '/impressum') {
+            link.classList.add('active');
+        } else if (currentPath === '/past-events' && link.getAttribute('href') === '/past-events') {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
