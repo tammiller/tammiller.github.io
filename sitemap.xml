@@ -4,7 +4,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://ladybugs-aachen.de/</loc>
-        <lastmod>2024-03-19</lastmod>
+        <lastmod>2025-06-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -30,7 +30,7 @@
     <!-- Section: Impressum -->
     <url>
         <loc>https://ladybugs-aachen.de/impressum</loc>
-        <lastmod>2024-03-19</lastmod>
+        <lastmod>2025-06-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
