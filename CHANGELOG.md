@@ -2,6 +2,17 @@
 
 All notable changes to the Ladybugs Aachen website will be documented in this file.
 
+## [1.1.0] - 2025-08-28
+
+### Added
+- Added events for October and November 2025
+
+### Changed
+- Simplified logic for events
+  - Consolidated all events into single events.json file
+  - Removed complex event management system
+  - Always display 3 most recent events chronologically
+
 ## [1.0.0] - 2025-06-14
 
 ### Added
