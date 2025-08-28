@@ -45,6 +45,150 @@ function createCookieBanner() {
     </div>`;
 }
 
+// Simple event loading functions for the refactored event system
+async function loadEvents() {
+    try {
+        const response = await fetch('events.json');
+        const events = await response.json();
+        return events;
+    } catch (error) {
+        console.error('Failed to load events:', error);
+        return [];
+    }
+}
+
+async function getLatestEvents() {
+    try {
+        const events = await loadEvents();
+        // Sort events by startDate (newest first) and return the 3 most recent
+        const sortedEvents = events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+        const latestThree = sortedEvents.slice(0, 3);
+        
+        // Reverse the order for display: oldest on left, newest on right
+        return latestThree.reverse();
+    } catch (error) {
+        console.error('Failed to get latest events:', error);
+        return [];
+    }
+}
+
+function generateEventHTML(events) {
+    if (!events || events.length === 0) {
+        return `
+            <div class="col-12 text-center">
+                <p>Events werden geladen... Bei Problemen kontaktiere uns unter contact [at] ladybugs-aachen.de</p>
+            </div>
+        `;
+    }
+
+    return events.map(event => {
+        const startDate = new Date(event.startDate);
+        const endDate = new Date(event.endDate);
+        
+        const formattedDate = startDate.toLocaleDateString("de-DE", {
+            weekday: "short",
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+        
+        const formattedTime = `${startDate.toLocaleTimeString("de-DE", {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        })} - ${endDate.toLocaleTimeString("de-DE", {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        })}`;
+        
+        const locationName = event.location?.name || 'Ort nicht verfügbar';
+        const hasRegistrationUrl = event.url && event.url.trim() !== '';
+        const registrationUrl = hasRegistrationUrl ? event.url : '#';
+        const buttonClass = hasRegistrationUrl ? 'btn btn-primary event-button' : 'btn btn-primary event-button disabled';
+        const buttonAttributes = hasRegistrationUrl ? 'target="_blank"' : 'aria-disabled="true"';
+        
+        return `
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-light">
+                    <div class="card-body">
+                        <h5 class="card-title">${event.name}</h5>
+                        <div class="event-date mb-3">
+                            <span class="badge bg-primary">${formattedDate}</span>
+                        </div>
+                        <p class="card-text">${event.description}</p>
+                        <p><strong>Uhrzeit:</strong> ${formattedTime}</p>
+                        <p><strong>Location:</strong> ${locationName}</p>
+                        <a href="${registrationUrl}" ${buttonAttributes} class="${buttonClass}">Anmeldung</a>
+                        <p class="event-keywords">${event.keywords}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+function generateStructuredData(events) {
+    if (!events || events.length === 0) return '';
+    
+    const structuredEvents = events.map(event => ({
+        "@type": "Event",
+        "name": event.name,
+        "description": event.description,
+        "startDate": event.startDate,
+        "endDate": event.endDate,
+        "url": event.url || "",
+        "keywords": event.keywords,
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": event.location?.name || "TBA",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": event.location?.address || "TBA"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Ladybugs Aachen",
+            "url": "https://www.linkedin.com/company/ladybugs-aachen/"
+        }
+    }));
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "EventSeries",
+        "name": "Ladybugs Aachen Events",
+        "description": "Regular meetups and workshops for women in software engineering in Aachen",
+        "url": "https://ladybugs-aachen.de",
+        "organizer": {
+            "@type": "Organization",
+            "name": "Ladybugs Aachen",
+            "url": "https://ladybugs-aachen.de"
+        },
+        "event": structuredEvents
+    };
+
+    return JSON.stringify(jsonLd, null, 2);
+}
+
+async function loadAndDisplayEvents() {
+    const events = await getLatestEvents();
+    const eventsContainer = document.getElementById('eventsContainer');
+    if (eventsContainer) {
+        eventsContainer.innerHTML = generateEventHTML(events);
+    }
+    
+    // Generate and inject structured data
+    const structuredData = generateStructuredData(events);
+    if (structuredData) {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = structuredData;
+        document.head.appendChild(script);
+    }
+}
+
 // Initialize components
 document.addEventListener('DOMContentLoaded', function() {
     // Insert navbar
@@ -86,4 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.remove('active');
         }
     });
-}); 
+
+    // Load and display events
+    loadAndDisplayEvents();
+});

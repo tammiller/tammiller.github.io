@@ -13,3 +13,8 @@ out/
 # Dependency directories
 bin/
 build/
+
+# Kiro
+.kiro/
+.vscode/
+=
