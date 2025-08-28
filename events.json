@@ -1,14 +1,38 @@
 [
   {
-    "name": "Septembermeeting",
-    "description": "Book club kick-off",
-    "startDate": "2025-09-29T18:30:00",
-    "endDate": "2025-09-29T21:00:00",
+    "name": "Novembermeeting",
+    "description": "Frontend web development",
+    "startDate": "2025-11-24T18:30:00",
+    "endDate": "2025-11-24T21:00:00",
     "url": "",
-    "keywords": "Book club, Lesekreis, Get-Together",
+    "keywords": "Frontend, Web Development, Accesibility",
     "location": {
       "name": "TBA",
       "address": "TBA"
+    }
+  },
+  {
+    "name": "Oktobermeeting",
+    "description": "Einführung in Websecurity",
+    "startDate": "2025-10-27T18:30:00",
+    "endDate": "2025-10-27T21:00:00",
+    "url": "",
+    "keywords": "Workshop, Pentest, IT Sicherheit",
+    "location": {
+      "name": "DigiChurch",
+      "address": "Jülicher Str. 72a, 52070 Aachen"
+    }
+  },
+  {
+    "name": "Septembermeeting",
+    "description": "Ladybugs Workshop",
+    "startDate": "2025-09-29T18:30:00",
+    "endDate": "2025-09-29T21:00:00",
+    "url": "",
+    "keywords": "Workshop, Ladybugs",
+    "location": {
+      "name": "DigiChurch",
+      "address": "Jülicher Str. 72a, 52070 Aachen"
     }
   },
   {
