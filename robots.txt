@@ -1,0 +1,46 @@
+# Robots.txt for Ladybugs Aachen - Women in Tech Community
+# https://ladybugs-aachen.de/robots.txt
+
+User-agent: *
+Allow: /
+
+# Allow all important content
+Allow: /index.html
+Allow: /impressum.html
+Allow: /images/
+Allow: /style.css
+Allow: /components.js
+Allow: /events.json
+
+# Block unnecessary files
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /.idea/
+Disallow: /.vscode/
+Disallow: /.kiro/
+Disallow: /CHANGELOG.md
+Disallow: /404.html
+
+# Sitemap location
+Sitemap: https://ladybugs-aachen.de/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Special instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
