@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ladybugs Aachen">
+    <meta name="robots" content="index, follow">
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="description"
+        content="Vergangene Veranstaltungen der Ladybugs Aachen - Rückblick auf unsere Tech Talks, Workshops und Networking Events für Frauen in der Softwareentwicklung.">
+    <meta name="keywords"
+        content="Ladybugs Aachen Archiv, vergangene Events, Tech Talks Archiv, Workshops Frauen IT, Women in Tech Events Aachen, Softwareentwicklerinnen Meetups, IT Events Rückblick">
+
+    <!-- Language and Alternate Language Tags -->
+    <link rel="alternate" hreflang="de" href="https://ladybugs-aachen.de/vergangene-veranstaltungen">
+    <link rel="alternate" hreflang="en" href="https://ladybugs-aachen.de/vergangene-veranstaltungen">
+    <link rel="alternate" hreflang="x-default" href="https://ladybugs-aachen.de/vergangene-veranstaltungen">
+
+    <!-- Geographic and Local SEO -->
+    <meta name="geo.region" content="DE-NW">
+    <meta name="geo.placename" content="Aachen">
+    <meta name="geo.position" content="50.7753;6.0839">
+    <meta name="ICBM" content="50.7753, 6.0839">
+
+    <!-- Enhanced Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ladybugs-aachen.de/vergangene-veranstaltungen">
+    <meta property="og:site_name" content="Ladybugs Aachen">
+    <meta property="og:title" content="Vergangene Veranstaltungen - Ladybugs Aachen | Women in Tech Events Archiv">
+    <meta property="og:description"
+        content="Entdecke unsere vergangenen Tech Talks, Workshops und Networking Events für Frauen in der Softwareentwicklung in Aachen.">
+    <meta property="og:image" content="https://ladybugs-aachen.de/images/ladybug.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ladybugs Aachen - Vergangene Events für Frauen in der IT">
+    <meta property="og:locale" content="de_DE">
+
+    <!-- Enhanced Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="ladybugs-aachen.de">
+    <meta name="twitter:url" content="https://ladybugs-aachen.de/vergangene-veranstaltungen">
+    <meta name="twitter:title" content="Vergangene Veranstaltungen - Ladybugs Aachen">
+    <meta name="twitter:description"
+        content="Rückblick auf unsere Tech Talks, Workshops und Events für Frauen in der Softwareentwicklung 👩‍💻">
+    <meta name="twitter:image" content="https://ladybugs-aachen.de/images/ladybug.jpeg">
+
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="images/favicon-32x32.png">
+
+    <!-- SEO-Optimized Title -->
+    <title>Vergangene Veranstaltungen - Ladybugs Aachen | Women in Tech Events Archiv</title>
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="canonical" href="https://ladybugs-aachen.de/vergangene-veranstaltungen" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="components.js"></script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <section class="container mt-5 mb-8">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1 class="text-center mb-4">Vergangene Veranstaltungen</h1>
+                <p class="text-center text-muted mb-5">
+                    Hier findest du einen Rückblick auf unsere bisherigen Tech Talks, Workshops und Networking Events.
+                </p>
+            </div>
+        </div>
+
+        <div class="row" id="pastEventsContainer">
+            <!-- Events will be loaded here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <nav aria-label="Vergangene Veranstaltungen Navigation">
+                    <ul class="pagination justify-content-center" id="paginationContainer">
+                        <!-- Pagination will be generated here -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <div id="cookie-banner-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Past Events functionality
+        let allPastEvents = [];
+        let currentPage = 1;
+        const eventsPerPage = 9;
+
+        async function loadPastEvents() {
+            try {
+                const response = await fetch('events.json');
+                const events = await response.json();
+
+                // Filter out future events - only show events that have already happened
+                const now = new Date();
+                const pastEvents = events.filter(event => {
+                    const eventDate = new Date(event.startDate);
+                    return eventDate < now;
+                });
+
+                // Sort past events by date (newest first)
+                allPastEvents = pastEvents.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+
+                displayPastEvents();
+                createPagination();
+            } catch (error) {
+                console.error('Failed to load past events:', error);
+                document.getElementById('pastEventsContainer').innerHTML = `
+          <div class="col-12 text-center">
+            <p class="text-muted">Fehler beim Laden der Veranstaltungen. Bitte versuche es später erneut.</p>
+          </div>
+        `;
+            }
+        }
+
+        function displayPastEvents() {
+            const startIndex = (currentPage - 1) * eventsPerPage;
+            const endIndex = startIndex + eventsPerPage;
+            const eventsToShow = allPastEvents.slice(startIndex, endIndex);
+
+            const container = document.getElementById('pastEventsContainer');
+
+            if (eventsToShow.length === 0) {
+                container.innerHTML = `
+          <div class="col-12 text-center">
+            <p class="text-muted">Keine Veranstaltungen auf dieser Seite gefunden.</p>
+          </div>
+        `;
+                return;
+            }
+
+            container.innerHTML = eventsToShow.map(event => {
+                const startDate = new Date(event.startDate);
+                const formattedDate = startDate.toLocaleDateString("de-DE", {
+                    weekday: "short",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric"
+                });
+
+                const hasUrl = event.url && event.url.trim() !== '';
+                const linkHtml = hasUrl
+                    ? `<a href="${event.url}" target="_blank" class="btn btn-outline-primary btn-sm">Event Details</a>`
+                    : '';
+
+                return `
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">${event.name}</h5>
+                <div class="event-date mb-3">
+                  <span class="badge bg-secondary">${formattedDate}</span>
+                </div>
+                <p class="card-text">${event.description}</p>
+                <div class="mb-3">
+                  <small class="text-muted">
+                    <strong>Keywords:</strong> ${event.keywords}
+                  </small>
+                </div>
+                ${linkHtml}
+              </div>
+            </div>
+          </div>
+        `;
+            }).join('');
+        }
+
+        function createPagination() {
+            const totalPages = Math.ceil(allPastEvents.length / eventsPerPage);
+            const paginationContainer = document.getElementById('paginationContainer');
+
+            if (totalPages <= 1) {
+                paginationContainer.innerHTML = '';
+                return;
+            }
+
+            let paginationHtml = '';
+
+            // Previous button
+            paginationHtml += `
+        <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+          <a class="page-link" href="#" onclick="changePage(${currentPage - 1})" aria-label="Vorherige">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+      `;
+
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    paginationHtml += `
+            <li class="page-item ${i === currentPage ? 'active' : ''}">
+              <a class="page-link" href="#" onclick="changePage(${i})">${i}</a>
+            </li>
+          `;
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    paginationHtml += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
+                }
+            }
+
+            // Next button
+            paginationHtml += `
+        <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+          <a class="page-link" href="#" onclick="changePage(${currentPage + 1})" aria-label="Nächste">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      `;
+
+            paginationContainer.innerHTML = paginationHtml;
+        }
+
+        function changePage(page) {
+            const totalPages = Math.ceil(allPastEvents.length / eventsPerPage);
+
+            if (page < 1 || page > totalPages) return;
+
+            currentPage = page;
+            displayPastEvents();
+            createPagination();
+
+            // Scroll to top of events section
+            document.getElementById('pastEventsContainer').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            loadPastEvents();
+        });
+    </script>
+</body>
+
+</html>

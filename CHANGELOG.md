@@ -2,6 +2,23 @@
 
 All notable changes to the Ladybugs Aachen website will be documented in this file.
 
+## [1.2.0] - 2025-09-01
+
+### Added
+- Added "Vergangene Veranstaltungen" (Past Events) page
+  - Displays all past events with pagination (9 events per page)
+  - Automatically filters out future events based on current date
+  - Shows event name, description, date, link, and keywords
+  - Responsive card-based layout with Bootstrap styling
+  - Smart pagination with ellipsis for large page counts
+  - Added to sitemap for SEO optimization
+- Added link to past events at bottom of main events section
+- Enhanced navigation with proper active page detection
+
+### Changed
+- Removed "Vergangene Veranstaltungen" from main navigation menu for cleaner UI
+- Updated sitemap.xml to include new past events page
+
 ## [1.1.0] - 2025-08-28
 
 ### Added

@@ -25,11 +25,11 @@
   },
   {
     "name": "Septembermeeting",
-    "description": "Ladybugs Workshop",
+    "description": "Book Club Kick-Off",
     "startDate": "2025-09-29T18:30:00",
     "endDate": "2025-09-29T21:00:00",
     "url": "",
-    "keywords": "Workshop, Ladybugs",
+    "keywords": "Bookclub, Fachliteratur",
     "location": {
       "name": "DigiChurch",
       "address": "Jülicher Str. 72a, 52070 Aachen"
@@ -129,6 +129,150 @@
     "location": {
       "name": "OecherLab",
       "address": "Kapuzinergraben 19 D, 52062 Aachen"
+    }
+  },
+  {
+    "name": "Dezembermeeting",
+    "description": "Weihnachtsfeier mit Brückenwelten",
+    "startDate": "2024-12-16T18:30:00",
+    "endDate": "2024-12-16T21:00:00",
+    "url": "https://www.linkedin.com/events/7269437825450708992/",
+    "keywords": "Weihnachtsfeier, Networking, Community",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Novembermeeting",
+    "description": "Arbeiten mit Legacy Code + Jubiläum Ladybugs",
+    "startDate": "2024-11-25T18:30:00",
+    "endDate": "2024-11-25T21:00:00",
+    "url": "https://www.linkedin.com/events/7259203433549778944/",
+    "keywords": "Legacy Code, Jubiläum, Workshop",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Oktobermeeting",
+    "description": "Hands-On Flutter Workshop",
+    "startDate": "2024-10-28T18:30:00",
+    "endDate": "2024-10-28T21:00:00",
+    "url": "https://www.linkedin.com/events/7248983835068043264/",
+    "keywords": "Flutter, Workshop, Mobile Development",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Septembermeeting",
+    "description": "Change Management in Software Development + MemGPT - AI models with infinite context size",
+    "startDate": "2024-09-30T18:30:00",
+    "endDate": "2024-09-30T21:00:00",
+    "url": "https://www.linkedin.com/events/7238891397808812033/",
+    "keywords": "Change Management, AI, MemGPT, Software Development",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Augustmeeting",
+    "description": "Get-Together im Park",
+    "startDate": "2024-08-26T18:00:00",
+    "endDate": "2024-08-26T21:00:00",
+    "url": "https://www.linkedin.com/events/7226675832029605888/",
+    "keywords": "Get-Together, Networking, Outdoor",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Junimeeting",
+    "description": "Clean Code & Reviews",
+    "startDate": "2024-06-24T18:30:00",
+    "endDate": "2024-06-24T21:00:00",
+    "url": "https://www.linkedin.com/events/7207822765242908673/",
+    "keywords": "Clean Code, Code Reviews, Best Practices",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Maimeeting",
+    "description": "Hack Evening",
+    "startDate": "2024-05-27T18:30:00",
+    "endDate": "2024-05-27T21:00:00",
+    "url": "https://www.linkedin.com/events/7193567604177797120/",
+    "keywords": "Hack Evening, Programming, Networking",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Märzmeeting",
+    "description": "REST APIs + Wie beeinflussen LLMs unsere Arbeit",
+    "startDate": "2024-03-28T18:30:00",
+    "endDate": "2024-03-28T21:00:00",
+    "url": "https://www.linkedin.com/events/7171956635081392128/",
+    "keywords": "REST APIs, LLMs, AI, Software Development",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Februarmeeting",
+    "description": "Hack Evening",
+    "startDate": "2024-02-26T18:30:00",
+    "endDate": "2024-02-26T21:00:00",
+    "url": "https://www.linkedin.com/events/7161713898004410369/",
+    "keywords": "Hack Evening, Programming, Networking",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Januarmeeting",
+    "description": "Best Practices in der Softwareentwicklung",
+    "startDate": "2024-01-29T18:30:00",
+    "endDate": "2024-01-29T21:00:00",
+    "url": "https://www.linkedin.com/events/7148997779757953025/",
+    "keywords": "Best Practices, Software Development, Workshop",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Dezembermeeting",
+    "description": "Get Together & Drinks",
+    "startDate": "2023-12-09T18:30:00",
+    "endDate": "2023-12-09T21:00:00",
+    "url": "",
+    "keywords": "Get Together, Networking, Drinks",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
+    }
+  },
+  {
+    "name": "Novembermeeting",
+    "description": "Erstes Treffen",
+    "startDate": "2023-11-28T18:30:00",
+    "endDate": "2023-11-28T21:00:00",
+    "url": "https://www.linkedin.com/events/7124866436065349633/",
+    "keywords": "Security, Design, Workshop",
+    "location": {
+      "name": "Placeholder",
+      "address": "Placeholder"
     }
   }
 ]
