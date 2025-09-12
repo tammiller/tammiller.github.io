@@ -33,12 +33,8 @@ function createFooter() {
             <div class="row">
                 <div class="col-md-8">
                     <p class="text-muted mb-2">Softwareentwicklerinnentreff Ladybug Aachen. A community for women in software engineering</p>
-                    <p class="text-muted mb-0">
-                        <strong>Location:</strong> Aachen, Nordrhein-Westfalen, Deutschland
-                    </p>
                 </div>
                 <div class="col-md-4 text-md-end">
-                    <h6>Follow Us</h6>
                     <a href="https://www.linkedin.com/company/ladybugs-aachen/" target="_blank" rel="noopener" class="text-decoration-none me-3">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
