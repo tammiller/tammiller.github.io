@@ -109,18 +109,11 @@
 
         async function loadPastEvents() {
             try {
-                const response = await fetch('events.json');
+                const response = await fetch('events-archive.json');
                 const events = await response.json();
 
-                // Filter out future events - only show events that have already happened
-                const now = new Date();
-                const pastEvents = events.filter(event => {
-                    const eventDate = new Date(event.startDate);
-                    return eventDate < now;
-                });
-
-                // Sort past events by date (newest first)
-                allPastEvents = pastEvents.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+                // Events are already filtered and sorted in the archive
+                allPastEvents = events;
 
                 displayPastEvents();
                 createPagination();
