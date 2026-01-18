@@ -180,33 +180,189 @@ h3 {
 
   /* --------------------------- Wer sind wir ------------------------------ */
   
+  .member-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px !important;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  }
+  
   .member-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   
   .member-image {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #c7f1dd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid #c7f1dd;
+    box-shadow: 0 4px 15px rgba(199, 241, 221, 0.4);
+    transition: all 0.3s ease;
   }
   
   .member-image:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    border-color: #a1d7b1;
+    box-shadow: 0 6px 20px rgba(161, 215, 177, 0.6);
+  }
+  
+  .member-name {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .member-info {
+    flex-grow: 1;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  
+  .member-role {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .member-education {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  .member-topics {
+    background-color: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border-left: 4px solid #c7f1dd;
+    margin-bottom: 1rem;
+  }
+  
+  .member-topics strong {
+    color: #2c3e50;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .topics-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #5a6c7d;
+    margin-bottom: 0;
+  }
+  
+  .member-links {
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .links-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 2px solid transparent;
+  }
+  
+  .social-link:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  
+  .social-link:hover .fa-linkedin {
+    background-color: #0077b5;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .social-link:hover .fa-github {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .social-link:hover .fa-microphone {
+    background-color: #e91e63;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .social-link:hover .fa-calendar-alt {
+    background-color: #ff6b35;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .social-link:hover .fa-cloud {
+    background-color: #00d4ff;
+    border-radius: 50%;
+    padding: 8px;
   }
   
   @media (max-width: 768px) {
     .member-image {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
+    }
+    
+    .member-info {
+      padding: 0 0.5rem;
+    }
+    
+    .member-topics {
+      padding: 0.5rem;
+    }
+    
+    .topics-text {
+      font-size: 0.75rem;
+    }
+    
+    .social-link {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
     }
   }
   
+  @media (max-width: 576px) {
+    .member-card {
+      margin-bottom: 2rem;
+    }
+    
+    .links-grid {
+      gap: 0.5rem;
+    }
+  }
+
+  /* Legacy styles for backward compatibility */
   .linkedin-link {
     display: inline-block;
     color: #6c757d;
