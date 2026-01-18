@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Märzmeeting",
+    "description": "TBA",
+    "startDate": "2026-03-30T18:30:00",
+    "endDate": "2026-03-30T21:00:00",
+    "url": "",
+    "keywords": "Data Science, Künstliche Intelligenz, Machine Learning",
+    "location": {
+      "name": "OecherLab",
+      "address": "Kapuzinergraben 19 D, 52062 Aachen"
+    }
+  },
+  {
+    "name": "Februarmeeting",
+    "description": "Hack Evening",
+    "startDate": "2026-02-23T18:30:00",
+    "endDate": "2026-02-23T21:00:00",
+    "url": "",
+    "keywords": "Hobby projects, Networking, Programming",
+    "location": {
+      "name": "OecherLab",
+      "address": "Kapuzinergraben 19 D, 52062 Aachen"
+    }
+  },
+  {
+    "name": "Januarmeeting",
+    "description": "Work journaling",
+    "startDate": "2026-01-26T18:30:00",
+    "endDate": "2026-01-26T21:00:00",
+    "url": "https://www.linkedin.com/events/7413974833337638912",
+    "keywords": "Work journaling, Brag Docs, Productivität, Selbstmanagement",
+    "location": {
+      "name": "OecherLab",
+      "address": "Kapuzinergraben 19 D, 52062 Aachen"
+    }
+  }
+]

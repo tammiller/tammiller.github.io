@@ -1,37 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
-    <!-- Homepage -->
+    <!-- Homepage - Main landing page -->
     <url>
         <loc>https://ladybugs-aachen.de/</loc>
-        <lastmod>2025-06-14</lastmod>
+        <lastmod>2025-08-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://ladybugs-aachen.de/images/ladybug.jpeg</image:loc>
+            <image:title>Ladybugs Aachen Logo - Women in Tech Community</image:title>
+            <image:caption>Community für Frauen in der Softwareentwicklung in Aachen</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://ladybugs-aachen.de/images/hackevening.jpeg</image:loc>
+            <image:title>Hack Evening - Women in Tech Meetup</image:title>
+            <image:caption>Frauen bei einem Hack Evening in Aachen</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://ladybugs-aachen.de/images/workshop.jpeg</image:loc>
+            <image:title>Tech Workshop - Women in Tech Event</image:title>
+            <image:caption>Tech Workshop für Softwareentwicklerinnen</image:caption>
+        </image:image>
     </url>
 
-    <!-- Section: Home -->
+    <!-- Section: About Us - Community information -->
     <url>
-        <loc>https://ladybugs-aachen.de/#home</loc>
+        <loc>https://ladybugs-aachen.de/#about</loc>
+        <lastmod>2025-08-30</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- Section: About Us -->
-    <url>
-        <loc>https://ladybugs-aachen.de/#about</loc>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Section: Events -->
+    <!-- Section: Events - Upcoming meetups and workshops -->
     <url>
         <loc>https://ladybugs-aachen.de/#events</loc>
+        <lastmod>2025-08-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Section: Call for Speakers -->
+    <url>
+        <loc>https://ladybugs-aachen.de/#callforaction</loc>
+        <lastmod>2025-08-30</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Section: Impressum -->
+    <!-- Past Events Archive -->
+    <url>
+        <loc>https://ladybugs-aachen.de/vergangene-veranstaltungen</loc>
+        <lastmod>2025-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Legal pages -->
     <url>
         <loc>https://ladybugs-aachen.de/impressum</loc>
-        <lastmod>2025-06-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2025-08-30</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
+
+    <!-- Data files for events -->
+    <url>
+        <loc>https://ladybugs-aachen.de/events.json</loc>
+        <lastmod>2025-08-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+
+
 </urlset>
