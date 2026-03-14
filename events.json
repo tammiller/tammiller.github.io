@@ -1,10 +1,10 @@
 [
   {
     "name": "Märzmeeting",
-    "description": "TBA",
+    "description": "MLOps & Prompt Engineering",
     "startDate": "2026-03-30T18:30:00",
     "endDate": "2026-03-30T21:00:00",
-    "url": "",
+    "url": "https://www.linkedin.com/events/7436871913517322240",
     "keywords": "Data Science, Künstliche Intelligenz, Machine Learning",
     "location": {
       "name": "OecherLab",
@@ -16,7 +16,7 @@
     "description": "Hack Evening",
     "startDate": "2026-02-23T18:30:00",
     "endDate": "2026-02-23T21:00:00",
-    "url": "",
+    "url": "https://www.linkedin.com/events/7425882650894135296",
     "keywords": "Hobby projects, Networking, Programming",
     "location": {
       "name": "OecherLab",
