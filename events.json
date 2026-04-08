@@ -1,5 +1,17 @@
 [
   {
+    "name": "Aprilmeeting",
+    "description": "Hack Evening",
+    "startDate": "2026-04-27T18:30:00",
+    "endDate": "2026-04-27T21:00:00",
+    "url": "https://www.linkedin.com/events/7447725529845256192",
+    "keywords": "Hack Evening, Programming, Networking",
+    "location": {
+      "name": "OecherLab",
+      "address": "Kapuzinergraben 19 D, 52062 Aachen"
+    }
+  },
+  {
     "name": "Märzmeeting",
     "description": "MLOps & Prompt Engineering",
     "startDate": "2026-03-30T18:30:00",
@@ -18,18 +30,6 @@
     "endDate": "2026-02-23T21:00:00",
     "url": "https://www.linkedin.com/events/7425882650894135296",
     "keywords": "Hobby projects, Networking, Programming",
-    "location": {
-      "name": "OecherLab",
-      "address": "Kapuzinergraben 19 D, 52062 Aachen"
-    }
-  },
-  {
-    "name": "Januarmeeting",
-    "description": "Work journaling",
-    "startDate": "2026-01-26T18:30:00",
-    "endDate": "2026-01-26T21:00:00",
-    "url": "https://www.linkedin.com/events/7413974833337638912",
-    "keywords": "Work journaling, Brag Docs, Productivität, Selbstmanagement",
     "location": {
       "name": "OecherLab",
       "address": "Kapuzinergraben 19 D, 52062 Aachen"
