@@ -1,35 +1,35 @@
 [
   {
+    "name": "GetTogether",
+    "description": "Get Together & Drinks",
+    "startDate": "2026-05-18T18:30:00",
+    "endDate": "2026-05-18T21:00:00",
+    "url": "",
+    "keywords": "Networking, Community, GetTogether",
+    "location": {
+      "name": "Schreib uns an!",
+      "address": "Schreib uns an!"
+    }
+  },
+  {
+    "name": "IT4Teens Workshop",
+    "description": "Programmierworkshop für Mädchen*",
+    "startDate": "2026-05-07T16:00:00",
+    "endDate": "2026-05-07T19:00:00",
+    "url": "https://termin.staedteregion-aachen.de/de-formal/book/it4teensworkshop?step=period",
+    "keywords": "Workshop, Programming, Girls Day, Education",
+    "location": {
+      "name": "RWTH Aachen",
+      "address": "Mies-van-der-Rohe-Str. 15, 52074 Aachen"
+    }
+  },
+  {
     "name": "Aprilmeeting",
     "description": "Hack Evening",
     "startDate": "2026-04-27T18:30:00",
     "endDate": "2026-04-27T21:00:00",
     "url": "https://www.linkedin.com/events/7447725529845256192",
     "keywords": "Hack Evening, Programming, Networking",
-    "location": {
-      "name": "OecherLab",
-      "address": "Kapuzinergraben 19 D, 52062 Aachen"
-    }
-  },
-  {
-    "name": "Märzmeeting",
-    "description": "MLOps & Prompt Engineering",
-    "startDate": "2026-03-30T18:30:00",
-    "endDate": "2026-03-30T21:00:00",
-    "url": "https://www.linkedin.com/events/7436871913517322240",
-    "keywords": "Data Science, Künstliche Intelligenz, Machine Learning",
-    "location": {
-      "name": "OecherLab",
-      "address": "Kapuzinergraben 19 D, 52062 Aachen"
-    }
-  },
-  {
-    "name": "Februarmeeting",
-    "description": "Hack Evening",
-    "startDate": "2026-02-23T18:30:00",
-    "endDate": "2026-02-23T21:00:00",
-    "url": "https://www.linkedin.com/events/7425882650894135296",
-    "keywords": "Hobby projects, Networking, Programming",
     "location": {
       "name": "OecherLab",
       "address": "Kapuzinergraben 19 D, 52062 Aachen"
