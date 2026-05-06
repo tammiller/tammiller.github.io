@@ -20,6 +20,7 @@ Disallow: /.vscode/
 Disallow: /.kiro/
 Disallow: /CHANGELOG.md
 Disallow: /ohne-css.html
+Disallow: /links.html
 
 # Sitemap location
 Sitemap: https://ladybugs-aachen.de/sitemap.xml
