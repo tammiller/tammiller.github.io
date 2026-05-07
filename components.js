@@ -18,7 +18,6 @@ function createNavbar() {
                     <a class="nav-link" href="/#about">Über uns</a>
                     <a class="nav-link" href="/#events">Veranstaltungen</a>
                     <a class="nav-link" href="/#callforaction">Call for Speakers</a>
-                    <a class="nav-link" href="/links.html">Nützliche Links</a>
                     <a class="nav-link" href="/impressum">Impressum</a>
                 </div>
             </div>
