@@ -1,5 +1,17 @@
 [
   {
+    "name": "Aprilmeeting",
+    "description": "Hack Evening",
+    "startDate": "2026-04-27T18:30:00",
+    "endDate": "2026-04-27T21:00:00",
+    "url": "https://www.linkedin.com/events/7447725529845256192",
+    "keywords": "Hack Evening, Programming, Networking",
+    "location": {
+      "name": "OecherLab",
+      "address": "Kapuzinergraben 19 D, 52062 Aachen"
+    }
+  },
+  {
     "name": "Märzmeeting",
     "description": "MLOps & Prompt Engineering",
     "startDate": "2026-03-30T18:30:00",
