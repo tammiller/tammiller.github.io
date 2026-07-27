@@ -118,16 +118,16 @@ function generateEventHTML(events) {
         const buttonAttributes = hasRegistrationUrl ? 'target="_blank"' : 'aria-disabled="true"';
         
         return `
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-light">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-light event-card">
                     <div class="card-body">
                         <h5 class="card-title">${event.name}</h5>
-                        <div class="event-date mb-3">
+                        <div class="event-date mb-2">
                             <span class="badge bg-primary">${formattedDate}</span>
                         </div>
-                        <p class="card-text">${event.description}</p>
-                        <p><strong>Uhrzeit:</strong> ${formattedTime}</p>
-                        <p><strong>Location:</strong> ${locationName}</p>
+                        <p class="card-text event-description">${event.description}</p>
+                        <p class="event-meta"><strong>Uhrzeit:</strong> ${formattedTime}</p>
+                        <p class="event-meta"><strong>Location:</strong> ${locationName}</p>
                         <a href="${registrationUrl}" ${buttonAttributes} class="${buttonClass}">Anmeldung</a>
                         <p class="event-keywords">${event.keywords}</p>
                     </div>
