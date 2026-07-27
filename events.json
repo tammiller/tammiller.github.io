@@ -1,5 +1,17 @@
 [
   {
+    "name": "TBA",
+    "description": "TBA",
+    "startDate": "2026-10-26T18:30:00",
+    "endDate": "2026-10-26T21:00:00",
+    "url": "",
+    "keywords": "Networking, Community",
+    "location": {
+      "name": "DigiChurch",
+      "address": "Jülicher Str. 72a, 52070 Aachen"
+    }
+  },
+  {
     "name": "Coding Agents",
     "description": "Exploring AI agents and intelligent automation",
     "startDate": "2026-09-28T18:30:00",
@@ -13,23 +25,11 @@
   },
   {
     "name": "Hack Evening",
-    "description": "Social coding and networking",
-    "startDate": "2026-08-31T18:30:00",
-    "endDate": "2026-08-31T21:00:00",
-    "url": "",
-    "keywords": "Hack Evening, Programming, Networking, Hands-on",
-    "location": {
-      "name": "TBA",
-      "address": "TBA"
-    }
-  },
-  {
-    "name": "Back to Basics",
-    "description": "Fundamentals and core concepts in software development",
+    "description": "Social coding and collaborative hacking",
     "startDate": "2026-07-27T18:30:00",
     "endDate": "2026-07-27T21:00:00",
     "url": "",
-    "keywords": "Basics, Programming, Fundamentals, Workshop",
+    "keywords": "Hack Evening, Programming, Networking, Hands-on",
     "location": {
       "name": "OecherLab",
       "address": "Kapuzinergraben 19 D, 52062 Aachen"
