@@ -1,11 +1,23 @@
 [
   {
-    "name": "TBA",
-    "description": "TBA",
+    "name": "Ladybugs 3. Geburtstag",
+    "description": "3. Geburtstag der Ladybugs Aachen",
+    "startDate": "2026-11-30T18:30:00",
+    "endDate": "2026-11-30T21:00:00",
+    "url": "",
+    "keywords": "Jubiläum, Community, Networking",
+    "location": {
+      "name": "DigiChurch",
+      "address": "Jülicher Str. 72a, 52070 Aachen"
+    }
+  },
+  {
+    "name": "Hack Evening",
+    "description": "Social coding and collaborative hacking",
     "startDate": "2026-10-26T18:30:00",
     "endDate": "2026-10-26T21:00:00",
     "url": "",
-    "keywords": "Networking, Community",
+    "keywords": "Hack Evening, Programming, Networking, Hands-on",
     "location": {
       "name": "DigiChurch",
       "address": "Jülicher Str. 72a, 52070 Aachen"
@@ -18,18 +30,6 @@
     "endDate": "2026-09-28T21:00:00",
     "url": "https://www.linkedin.com/events/7504264657478742016?viewAsMember=true",
     "keywords": "AI, Agents, Automation, Workshop",
-    "location": {
-      "name": "OecherLab",
-      "address": "Kapuzinergraben 19 D, 52062 Aachen"
-    }
-  },
-  {
-    "name": "Hack Evening",
-    "description": "Social coding and collaborative hacking",
-    "startDate": "2026-07-27T18:30:00",
-    "endDate": "2026-07-27T21:00:00",
-    "url": "",
-    "keywords": "Hack Evening, Programming, Networking, Hands-on",
     "location": {
       "name": "OecherLab",
       "address": "Kapuzinergraben 19 D, 52062 Aachen"
